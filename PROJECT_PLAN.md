@@ -16,8 +16,8 @@ The project is complete when another person can use the documentation to:
 - [x] Create the local and remote Git repository.
 - [x] Add a README, license, and Python `.gitignore`.
 - [x] Define the project scope and hardware plan.
-- [ ] Record the Mac development environment.
-- [ ] Create and verify the Python 3.11 environment.
+- [x] Record the Mac development environment.
+- [x] Create and verify the Python 3.11 environment.
 - [ ] Decide how large artifacts are stored outside Git.
 
 Exit criterion: a clean repository and a verified lightweight Python

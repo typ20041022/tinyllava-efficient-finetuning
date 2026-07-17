@@ -1,0 +1,12 @@
+name: tinyllava-repro
+
+channels:
+  - defaults
+
+dependencies:
+  - python=3.11
+  - pip
+
+# This is the lightweight, cross-machine base environment.
+# GPU-specific PyTorch and TinyLLaVA dependencies will be documented separately
+# after the RTX 3060 and RTX 4090 machines have been inspected.
