@@ -179,3 +179,23 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# Project data and model artifacts
+data/
+models/
+checkpoints/
+outputs/
+wandb/
+runs/
+
+# Large model files
+*.bin
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+
+# Local secrets and machine-specific settings
+.env.*
+!.env.example
+.DS_Store
