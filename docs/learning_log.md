@@ -49,3 +49,24 @@ unclear. Entries should describe real work rather than inflate activity.
 
 - The MacBook had 8.8 GiB of internal storage available. It will not store model
   weights, complete datasets, or training outputs.
+
+## 2026-07-17 - Beginning architecture study
+
+### Material added
+
+- Added a first-principles explanation of the vision processor, vision tower,
+  connector, language model, and two-stage LLaVA-style training process.
+- Added a short exercise that must be answered in my own words before pretrained
+  inference begins.
+
+### Exercise completed
+
+- Explained why raw pixels and language-model token embeddings are
+  incompatible.
+- Distinguished deterministic image preprocessing from semantic feature
+  extraction by the vision tower.
+- Corrected the misconception that a connector creates discrete word tokens:
+  it projects visual features into LLM-compatible continuous embeddings.
+- Compared connector-only tuning with low-rank adaptation.
+- Explained the role of the image placeholder and why fluent output is not
+  evidence of faithful visual understanding.

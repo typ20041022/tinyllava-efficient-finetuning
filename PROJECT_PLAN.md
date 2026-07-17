@@ -25,8 +25,8 @@ environment.
 
 ## Phase 1 - Architecture and Pretrained Inference
 
-- [ ] Read the LLaVA and TinyLLaVA architecture at a high level.
-- [ ] Identify the vision tower, connector, language model, and training stages.
+- [x] Read the LLaVA and TinyLLaVA architecture at a high level.
+- [x] Identify the vision tower, connector, language model, and training stages.
 - [ ] Run one official pretrained-model inference example.
 - [ ] Run batch inference on a tiny image-question sample.
 - [ ] Save predictions in a machine-readable format.
