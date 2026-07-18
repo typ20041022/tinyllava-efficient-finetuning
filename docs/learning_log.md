@@ -70,3 +70,24 @@ unclear. Entries should describe real work rather than inflate activity.
 - Compared connector-only tuning with low-rank adaptation.
 - Explained the role of the image placeholder and why fluent output is not
   evidence of faithful visual understanding.
+
+## 2026-07-18 - Multimodal input construction
+
+### What I learned
+
+- The image placeholder is replaced by a sequence of projected visual
+  embeddings, so one placeholder can expand into many positions in the LLM
+  input sequence.
+- Text token IDs and visual features are not concatenated directly. Text IDs
+  are first mapped to embeddings, then visual embeddings are inserted at the
+  placeholder position.
+- Labels aligned with visual positions are ignored during causal-language-model
+  loss computation; the model is not asked to predict a word token for each
+  image patch.
+
+### What I completed
+
+- Traced the multimodal input-building path from text token IDs and image
+  features to the combined embedding sequence consumed by the language model.
+- Understood how attention masks, position IDs, and training labels must expand
+  consistently when one image placeholder becomes many visual embeddings.
