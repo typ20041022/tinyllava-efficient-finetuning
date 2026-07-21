@@ -50,6 +50,10 @@ machine lightweight.
 ## Storage Policy
 
 - Source code and small documentation assets: local Git repository
-- Large datasets and model weights: external drive or GPU machine
+- Large datasets and model weights: `/Volumes/VLM/tinyllava-repro` on Mac, or
+  the GPU machine's local disk
 - Checkpoints and training outputs: GPU machine plus external-drive backup
 - API keys and access tokens: local environment variables only, never Git
+
+See `docs/storage.md` for the verified external-drive layout and environment
+variables.

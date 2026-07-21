@@ -18,7 +18,7 @@ The project is complete when another person can use the documentation to:
 - [x] Define the project scope and hardware plan.
 - [x] Record the Mac development environment.
 - [x] Create and verify the Python 3.11 environment.
-- [ ] Decide how large artifacts are stored outside Git.
+- [x] Decide how large artifacts are stored outside Git.
 
 Exit criterion: a clean repository and a verified lightweight Python
 environment.
