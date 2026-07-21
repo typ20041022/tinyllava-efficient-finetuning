@@ -5,10 +5,12 @@ parameter-efficient fine-tuning of a LLaVA-style vision-language model.
 
 ## Status
 
-**Phase 0 - Project setup**
+**Phase 1 - Pretrained inference**
 
-The repository is being developed step by step. Experimental claims and
-performance numbers will only be added after they have been reproduced.
+The repository setup, architecture walkthrough, and first Apple MPS pretrained
+inference are complete. Batch inference and structured prediction logging are
+the next milestones. Experimental claims and performance numbers will only be
+added after they have been reproduced.
 
 ## Objectives
 

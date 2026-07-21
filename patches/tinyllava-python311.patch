@@ -1,0 +1,28 @@
+diff --git a/tinyllava/data/template/formatter.py b/tinyllava/data/template/formatter.py
+--- a/tinyllava/data/template/formatter.py
++++ b/tinyllava/data/template/formatter.py
+@@ -6,21 +6,21 @@ from typing import  Dict, Union, List
+ SLOT = Union[str, List[str], Dict[str, str]]
+ 
+-@dataclass
++@dataclass(unsafe_hash=True)
+ class Formatter(ABC):
+     slot: SLOT = ""
+ 
+     @abstractmethod
+     def apply(self, **kwargs) -> SLOT: ...
+ 
+ 
+ 
+-@dataclass
++@dataclass(unsafe_hash=True)
+ class EmptyFormatter(Formatter):
+     def apply(self, **kwargs) -> SLOT:
+         return self.slot
+ 
+ 
+-@dataclass
++@dataclass(unsafe_hash=True)
+ class StringFormatter(Formatter):
+     def apply(self, **kwargs) -> SLOT:
+         msg = ""

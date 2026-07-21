@@ -29,7 +29,7 @@ environment.
 - [x] Identify the vision tower, connector, language model, and training stages.
 - [x] Trace image encoding, connector projection, and multimodal input insertion
   in the official TinyLLaVA code.
-- [ ] Run one official pretrained-model inference example.
+- [x] Run one official pretrained-model inference example.
 - [ ] Run batch inference on a tiny image-question sample.
 - [ ] Save predictions in a machine-readable format.
 

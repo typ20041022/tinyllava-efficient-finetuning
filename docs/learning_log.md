@@ -91,3 +91,27 @@ unclear. Entries should describe real work rather than inflate activity.
   features to the combined embedding sequence consumed by the language model.
 - Understood how attention masks, position IDs, and training labels must expand
   consistently when one image placeholder becomes many visual embeddings.
+
+## 2026-07-21 - First pretrained inference
+
+### What I learned
+
+- Upstream research code may require compatibility work before it runs on a
+  different operating system, accelerator, or Python version.
+- An editable installation can reference official source code stored outside
+  the main repository without copying model artifacts into Git.
+- A successful inference pipeline proves that the components execute together;
+  it does not prove that the generated answer is visually grounded.
+- Hallucination can be identified by comparing a generated claim against
+  directly observable image content.
+
+### What I completed
+
+- Ran `Zhang199/TinyLLaVA-Qwen2-0.5B-SigLIP` end to end on Apple MPS in FP16.
+- Kept the 2.12 GB model checkpoint and Hugging Face cache on the external SSD.
+- Added reproducible compatibility patches for inference-only imports and
+  Python 3.11.
+- Added a device-adaptive inference script instead of using the upstream
+  CUDA-only entry point.
+- Recorded a visual hallucination in which the model claimed that a nonexistent
+  boat was the main danger.

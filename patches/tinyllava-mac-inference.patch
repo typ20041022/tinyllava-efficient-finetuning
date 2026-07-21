@@ -1,0 +1,11 @@
+diff --git a/tinyllava/utils/__init__.py b/tinyllava/utils/__init__.py
+--- a/tinyllava/utils/__init__.py
++++ b/tinyllava/utils/__init__.py
+@@ -2,7 +2,6 @@ from .arguments import *
+ from .constants import *
+ from .import_module import *
+ from .logging import *
+-from .train_utils import *
+ from .message import *
+ from .eval_utils import *
+ from .data_utils import *

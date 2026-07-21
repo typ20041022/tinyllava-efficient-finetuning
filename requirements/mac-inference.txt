@@ -1,0 +1,19 @@
+# Minimal dependencies for pretrained TinyLLaVA inference on Apple Silicon.
+#
+# Intentionally excluded because they are NVIDIA/Linux training dependencies:
+# flash-attn, bitsandbytes, deepspeed.
+
+torch
+torchvision
+# TinyLLaVA Factory pins this version. Transformers 5.x may contain breaking
+# API changes that the upstream project was not written against.
+transformers==4.40.1
+accelerate
+pillow
+sentencepiece
+tiktoken
+safetensors
+
+# Imported by TinyLLaVA connector modules during package registration.
+einops==0.6.1
+einops-exts==0.0.4
